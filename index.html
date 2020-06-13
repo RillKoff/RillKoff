@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>МастеВет. Ветклиника.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a37b24458.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="background-top">
+      <div class="header">
+        <div class="header_position">
+          <div class="header_logo"> <img src="img/logo_mini.png" alt="" height="70px" width="70px"> <p class="header_logo_text"> МастерВет </p> </div>
+          <div class="header_nav">
+            <ul class="header_nav_list">
+              <li><a href="">Главная</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Еще</a></li>
+              <li><a href="">vkmastervet@yandex.ru</a></li>
+              <li><a href="">+7(969)0081118</a></li>
+              <li><a href=""> <i class="fab fa-facebook fa-1.5x social_icon"></i> </a></li>
+              <li><a href=""> <i class="fab fa-twitter social_icon"></i> </a></li>
+              <li><a href=""> <i class="fab fa-instagram-square social_icon"></i> </a></li>
+              <li><a href=""> <i class="fab fa-vk social_icon"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="title"> <p>Клиника <br> «МастерВет»</p> </div>
+      <div class="slogan"> <p> С заботой о ваших питомцах </p> </div>
+      <div class="scroll_down">
+        <a href="#scroll_down"><i class="scroll_down far fa-arrow-alt-circle-down fa-5x"></i></a>
+      </div>
+    </div>
+
+<!-- Конец начального блока -->
+
+    <!-- Блок информации и картинка рядом -->
+    <div class="info_container" id="scroll_down">
+        <div class="info_padding">
+          <div class="info_position">
+            <div class="info">
+              <p>Бомбическое качество обслуживания</p>
+            </div>
+            <div class="info_picture">
+            </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Конец инфо блока -->
+
+<!-- Цены на услуги -->
+    <div class="price_list_container">
+        <div class="price_list_padding">
+          <div class="price_list_position">
+
+            <div class="price_1 price_block">
+              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"></img> </a> </div>
+              <div class="price_description"><p> <a href="#"> Первичный прием </a> </p></div>
+              <div class="price"> <p>500₽</p> </div>
+              <a href="#" class="about_price_button">Подробнее</a>
+
+            </div>
+
+            <div class="price_1 price_block">
+              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"></img> </a> </div>
+              <div class="price_description"><p> <a href="#"> Вакцинация животных </a> </p></div>
+              <div class="price"> <p>От 800 до 1300</p> </div>
+              <a href="#" class="about_price_button">Подробнее</a>
+            </div>
+
+            <div class="price_1 price_block">
+              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"></img> </a> </div>
+              <div class="price_description"><p> <a href="#"> Кастрация кота </a> </p></div>
+              <div class="price"> <p>1500₽</p> </div>
+              <a href="#" class="about_price_button">Подробнее</a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+$(document).ready(function(){
+    $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+        e.preventDefault();
+        var t = 800;
+        var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+        $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+    });
+});
+</script>
+  </body>
+</html>

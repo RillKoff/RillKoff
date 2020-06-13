@@ -1,0 +1,227 @@
+
+
+*{
+  margin: 0;
+  font-family: montserrat,sans-serif;
+
+}
+
+
+.background-top{
+  height: 100vh;
+  background: url(img/parallax.jpg);
+
+}
+
+.header{
+  height: 15vh;
+}
+
+.header_position{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo{
+  padding: 1vh 0 0 7vw;
+  display: flex;
+}
+
+.header_logo_text{
+  padding-left: 15px;
+  color: white;
+  font-size: 30px;
+  margin: 2vh 0;
+}
+
+.header_nav{
+  margin-right: 7vw;
+}
+
+.header_nav_list{
+  display: flex;
+  list-style: none;
+  color: white;
+  font-size: 18px;
+  margin: 4vh 0;
+}
+
+.header_nav_list a{
+  color: white;
+  text-decoration: none;
+}
+
+.header_nav_list a:hover{
+  transition-duration: .4s;
+  border-bottom: solid 1px;
+  color: #2abd91;
+}
+
+.header_nav_list li{
+  padding-left: 30px;
+}
+
+.social_icon{
+  font-size: 24px;
+}
+
+.title{
+  line-height: 1.25em;
+  margin-top: 20vh;
+  text-align: center;
+  color: white;
+  text-shadow: 2.5px 2.5px 1px #000;
+  font-size: 72px;
+}
+
+.slogan{
+  line-height: 1.67em;
+  text-align:  center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1.5px 1.5px 1px #000;
+  font-size: 20px;
+}
+
+.scroll_down{
+  color: white;
+  position: absolute;
+  bottom: 1vh;
+  left: 23.5vw;
+}
+
+.scroll_down:hover{
+  color: #2abd91;
+  transition-duration: .4s;
+}
+
+
+
+/*                 Блок с информацией                 */
+
+.info_container{
+  height: 60vh;
+  background-color: #282860;
+}
+
+.info_padding{
+  padding-top: 10vh;
+}
+
+.info_position{
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 40vh;
+}
+
+
+.info{
+  margin-right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #2abd91;
+}
+
+.info_picture{
+  height: 100%;
+  width: 50%;
+  background: url(https://cdn.discordapp.com/attachments/223144218690846739/721145903490138181/polisi-rusia-sibuk-cari-kucing-yang-bawa-bom-k7bKsJdTuF.png);
+  background-size: cover;
+}
+
+.info p{
+  font-size: 30px;
+  margin: 20% auto;
+  text-align: center;
+  color: white;
+}
+
+/* Блок с ценами на услуги */
+
+.price_list_container{
+  height: 100vh;
+  background-color: #282860;
+}
+
+.price_list_padding{
+  padding-top: 10vh;
+}
+
+.price_list_position{
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 60vh;
+}
+
+
+.price_block{
+  position: relative;
+  width: 25%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.price_img{
+  width: 100%;
+  height: 50%;
+}
+
+.price_img img{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.price_description{
+  margin: 6% 40px 0 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+
+
+.price_description a{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.price_description a:hover{
+  color: #9c9c9c;
+  transition-duration: .4s;
+}
+
+
+.price{
+  margin: 5% 0 0 40px;
+}
+
+.price p{
+  color: white;
+  font-size: 20px;
+}
+
+.about_price_button{
+  position: absolute;
+  left: 2vw;
+  bottom: 3vh;
+  padding: 10px 10px 5px 10px;
+  height: 25px;
+  width: 100px;
+  background-color: #2abd91;
+  text-decoration: none;
+  color: #282860;
+  text-align: center;
+}
+
+.about_price_button:hover{
+  color: #2abd91;
+  background-color: #282860;
+  transition-duration: .4s;
+  border: 1px solid white;
+}
