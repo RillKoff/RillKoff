@@ -1,4 +1,19 @@
-
+::-webkit-input-placeholder {
+          color: #2abd91;
+          padding-left: 10px;
+        }
+::-moz-placeholder { /* Firefox 19+ */
+          color: #2abd91;
+          padding-left: 10px;
+        }
+:-ms-input-placeholder {
+          color: #2abd91;
+          padding-left: 10px;
+        }
+ :-moz-placeholder { /* Firefox 18- */
+          color: #2abd91;
+          padding-left: 10px;
+        }
 
 *{
   margin: 0;
@@ -57,6 +72,10 @@
   color: #2abd91;
 }
 
+.header_nav_list a:not(:hover){
+  transition-duration: .6s;
+}
+
 .header_nav_list li{
   padding-left: 30px;
 }
@@ -95,6 +114,9 @@
   transition-duration: .4s;
 }
 
+.scroll_down:not(:hover){
+  transition-duration: .6s;
+}
 
 
 /*                 Блок с информацией                 */
@@ -140,7 +162,7 @@
 /* Блок с ценами на услуги */
 
 .price_list_container{
-  height: 100vh;
+  height: 85vh;
   background-color: #282860;
 }
 
@@ -175,13 +197,13 @@
   max-height: 100%;
 }
 
+
 .price_description{
   margin: 6% 40px 0 40px;
   padding-bottom: 20px;
   border-bottom: 2px solid white;
   text-align: center;
 }
-
 
 
 .price_description a{
@@ -196,6 +218,9 @@
   transition-duration: .4s;
 }
 
+.price_description a:not(:hover){
+  transition-duration: .6s;
+}
 
 .price{
   margin: 5% 0 0 40px;
@@ -224,4 +249,215 @@
   background-color: #282860;
   transition-duration: .4s;
   border: 1px solid white;
+}
+
+.about_price_button:not(:hover){
+  transition-duration: .6s;
+}
+
+
+/* Блок с фотографиями */
+ .photo_container{
+   width: 100%;
+   height: 100vh;
+   background-color: #282860;
+ }
+
+ .photo_position{
+   width: 60%;
+   height: 70%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+.photo{
+  width: 33%;
+  height: auto;
+  margin-bottom: 0.5%;
+  background-image: url(img/photo_about_us.jpg);
+  background-size: cover;
+}
+
+.photo_more{
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+  height: 25px;
+  width: 100px;
+  background-color: #2abd91;
+  border: 1px solid #2abd91;
+  text-decoration: none;
+  color: #282860;
+  text-align: center;
+}
+
+.photo_more:hover{
+  color: #2abd91;
+  background-color: #282860;
+  transition-duration: .4s;
+  border: 1px solid white;
+}
+
+.photo_more:not(:hover){
+  transition-duration: .6s;
+}
+
+.photo_more_container{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.svaz{
+  width: 100%;
+  height: 50vh;
+  background-color: #282860;
+}
+
+.svaz_position{
+  margin: 0 auto;
+  width: 60%;
+}
+
+form h1{
+  color: #2abd91;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form input{
+  color: #2abd91;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 5vh;
+  background-color: #282860;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+form textarea{
+  color: #2abd91;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 7vh;
+  background-color: #282860;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+form button{
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #2abd91;
+  color: #282860;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #2abd91;
+  background-color: #282860;
+  transition-duration: .4s;
+  border: 1px solid white;
+}
+
+form button:not(:hover){
+  transition-duration: .6s;
+}
+
+form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+iframe {
+  filter: grayscale(100%);
+}
+
+.map{
+  width: 100%;
+  min-width: initial;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posts_container{
+  width: 100%;
+  height: 70vh;
+  background-color: #282860;
+}
+
+.posts_position{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 50vh;
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+.post{
+  width: 40%;
+  height: 100%;
+  border: 1px solid white;
+  position: relative;
+  background: url(img/posts_dog.jpg);
+  background-position: center;
+}
+
+.post p{
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  font-size: 20px;
+}
+
+.line_posts{
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  border-top: 1px solid white;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-color: #282860;
+}
+
+.footer_position{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer_social{
+  line-height: 30px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+
+
+.footer_social a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer_social a:hover{
+  transition-duration: .4s;
+  border-bottom: solid 1px;
+  color: #2abd91;
+}
+
+.footer_social a:not(:hover){
+  transition-duration: .6s;
 }
