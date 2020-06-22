@@ -1,6 +1,9 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
   <head>
-    <title>МастеВет. Ветклиника.</title>
+    <meta charset="utf-8">
+    <title> МастеВет. Ветклиника. </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4a37b24458.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -10,17 +13,37 @@
       <div class="header">
         <div class="header_position">
           <div class="header_logo"> <img src="img/logo_mini.png" alt="" height="70px" width="70px"> <p class="header_logo_text"> МастерВет </p> </div>
+<!-- ____________________ Бургер меню______________-->
+          <div id="menuArea">
+            <input type="checkbox" id="menuToggle" class="burger_input"></input>
+
+          <label for="menuToggle" class="menuOpen">
+            <div class="open"></div>
+          </label>
+
+          <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menuContent">
+              <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="pricelist.html">Услуги</a></li>
+                <li><a href=""> <i class="fab fa-instagram-square social_icon"></i> </a></li>
+                <li><a href="https://vk.com/public196092591"> <i class="fab fa-vk social_icon"></i> </a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+<!-- ____________________ Бургер меню______________-->
           <div class="header_nav">
             <ul class="header_nav_list">
               <li><a href="">Главная</a></li>
-              <li><a href="">Блог</a></li>
-              <li><a href="">Еще</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="pricelist.html">Услуги</a></li>
               <li><a href="">vkmastervet@yandex.ru</a></li>
               <li><a href="">+7(969)0081118</a></li>
-              <li><a href=""> <i class="fab fa-facebook fa-1.5x social_icon"></i> </a></li>
-              <li><a href=""> <i class="fab fa-twitter social_icon"></i> </a></li>
               <li><a href=""> <i class="fab fa-instagram-square social_icon"></i> </a></li>
-              <li><a href=""> <i class="fab fa-vk social_icon"></i> </a></li>
+              <li><a href="https://vk.com/public196092591"> <i class="fab fa-vk social_icon"></i> </a></li>
             </ul>
           </div>
         </div>
@@ -31,8 +54,6 @@
         <a href="#scroll_down"><i class="scroll_down far fa-arrow-alt-circle-down fa-5x"></i></a>
       </div>
     </div>
-
-<!-- Конец начального блока -->
 
     <!-- Блок информации и картинка рядом -->
     <div class="info_container" id="scroll_down">
@@ -47,7 +68,6 @@
       </div>
     </div>
 
-<!-- Конец инфо блока -->
 
 <!-- Цены на услуги -->
     <div class="price_list_container">
@@ -55,7 +75,7 @@
           <div class="price_list_position">
 
             <div class="price_1 price_block">
-              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"></img> </a> </div>
+              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"> </a> </div>
               <div class="price_description"><p> <a href="#"> Первичный прием </a> </p></div>
               <div class="price"> <p>500₽</p> </div>
               <a href="#" class="about_price_button">Подробнее</a>
@@ -63,20 +83,21 @@
             </div>
 
             <div class="price_1 price_block">
-              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"></img> </a> </div>
+              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"> </a> </div>
               <div class="price_description"><p> <a href="#"> Вакцинация животных </a> </p></div>
               <div class="price"> <p>От 800 до 1300</p> </div>
               <a href="#" class="about_price_button">Подробнее</a>
             </div>
 
             <div class="price_1 price_block">
-              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"></img> </a> </div>
+              <div class="price_img"> <a href="#"> <img src="img/price_list_img.jpg"> </a> </div>
               <div class="price_description"><p> <a href="#"> Кастрация кота </a> </p></div>
               <div class="price"> <p>1500₽</p> </div>
               <a href="#" class="about_price_button">Подробнее</a>
             </div>
 
         </div>
+        <p class="more_pricelist_wrap"><a class="more_pricelist" href="pricelist.html">Больше услуг</a></p>
       </div>
     </div>
 
@@ -91,9 +112,9 @@
         <div class="photo">  </div>
         <div class="photo">  </div>
       </div>
-        <p class="photo_more_container"><a class="photo_more" href="#">Больше фотографий</a></p>
+    <p class="photo_more_container"><a class="photo_more" href="#">Больше фотографий</a></p>
     </div>
-    <!-- Конец блока с фотографиями -->
+
 
     <!-- Блок обратной связи -->
   <div class="svaz">
@@ -101,15 +122,15 @@
       <form>
         <h1>Свяжитесь с нами</h1>
         <div>
-          <input placeholder="Имя">
+          <input placeholder="Имя" class="form_svaz">
           <label></label>
         </div>
         <div>
-          <input placeholder="Электронная почта">
+          <input placeholder="Электронная почта" class="form_svaz">
           <label></label>
         </div>
         <div>
-          <input placeholder="Тема">
+          <input placeholder="Тема" class="form_svaz">
           <label></label>
         </div>
         <div>
@@ -131,10 +152,8 @@
 <div class="footer">
   <div class="footer_position">
     <div class="footer_social">
-      <a href=""> <i class="fab fa-facebook fa-1.5x social_icon"></i> </a>
-      <a href=""> <i class="fab fa-twitter social_icon"></i> </a>
-      <a href=""> <i class="fab fa-instagram-square social_icon"></i> </a>
-      <a href=""> <i class="fab fa-vk social_icon"></i> </a>
+      <a href=""> <i class="fab fa-instagram-square social_icon_footer"></i> </a>
+      <a href="https://vk.com/public196092591"> <i class="fab fa-vk social_icon_footer"></i> </a>
       <p>©2020 Кирилл Коршунов</p>
     </div>
   </div>
