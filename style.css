@@ -30,6 +30,8 @@
   background-attachment: fixed;
 }
 
+
+
 .header{
   height: 15vh;
 }
@@ -41,7 +43,7 @@
 }
 
 .header_logo{
-  padding: 1vh 0 0 7vw;
+  padding: 7px 0 7px 15px;
   display: flex;
 }
 
@@ -127,8 +129,7 @@
 }
 
 
-
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
   .header_position{
     background-color: rgba(42, 189, 145, 1);
     position: fixed;
@@ -136,6 +137,13 @@
   }
   .header_nav{display: none;}
 
+  .background-top{
+    height: 80vh;
+  }
+
+  .scroll_down{
+    bottom: 11vh;
+  }
 }
 
 
@@ -298,7 +306,7 @@
   transform: translateY(-30%);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
   #menuArea{
     display: none;
   }
@@ -341,7 +349,7 @@
   color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .info_position{
     flex-direction: column;
   }
@@ -489,7 +497,7 @@
   transition-duration: .6s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .price_list_position{
     flex-direction: column;
   }
@@ -557,7 +565,7 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
   .photo_position{
     flex-direction: column;
     width: 100%;
@@ -640,7 +648,7 @@
   box-shadow: 0 0 0 4px #cbd6ee;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .svaz_position{
     width: 90%;
   }
@@ -702,15 +710,19 @@ iframe {
   border-top: 1px solid white;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1080px) {
   .post_position{
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
   }
   .post{
     margin-top: 20px;
+    width: 100%;
+    height: 500px;
   }
 }
+
 
 /* Футер */
 
