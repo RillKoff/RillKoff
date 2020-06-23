@@ -54,7 +54,7 @@
 
 .header_logo_text{
   padding-left: 15px;
-  color: white;
+  color: #FFF;
   font-size: 30px;
   margin: 2vh 0;
 }
@@ -66,13 +66,13 @@
 .header_nav_list{
   display: flex;
   list-style: none;
-  color: white;
+  color: #FFF;
   font-size: 18px;
   margin: 4vh 0;
 }
 
 .header_nav_list a{
-  color: white;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -98,7 +98,7 @@
   line-height: 1.25em;
   margin-top: 20vh;
   text-align: center;
-  color: white;
+  color: #FFF;
   text-shadow: 2.5px 2.5px 1px #000;
   font-size: 72px;
 }
@@ -107,13 +107,13 @@
   line-height: 1.67em;
   text-align:  center;
   margin: 0 auto;
-  color: white;
+  color: #FFF;
   text-shadow: 1.5px 1.5px 1px #000;
   font-size: 20px;
 }
 
 .scroll_down{
-  color: white;
+  color: #FFF;
   position: absolute;
   bottom: 1vh;
   left: 23.5vw;
@@ -226,7 +226,7 @@
 
 .menu ul li a {
   display: block;
-  color: white;
+  color: #FFF;
   text-decoration: none;
   transition: color 0.2s;
   font-family: Trebuchet MS;
@@ -239,7 +239,7 @@
 }
 
 .menu ul li:hover {
-  background: white;
+  background: #FFF;
 }
 
 .menuEffects {
@@ -269,7 +269,7 @@
 
 #menuToggle:checked ~ .menuOpen .open:before {
   content: "";
-  background-color: white;
+  background-color: #FFF;
   transform: rotate(45deg);
   position: absolute;
   top: 0;
@@ -279,7 +279,7 @@
 
 #menuToggle:checked ~ .menuOpen .open:after {
   content: "";
-  background-color: white;
+  background-color: #FFF;
   transform: rotate(-45deg);
   position: relative;
   top: 0;
@@ -360,7 +360,7 @@
   font-size: 30px;
   margin: 20% auto;
   text-align: center;
-  color: white;
+  color: #FFF;
 }
 
 @media (max-width: 1080px) {
@@ -400,7 +400,7 @@
   position: relative;
   width: 25%;
   height: 100%;
-  border: 1px solid white;
+  border: 1px solid #FFF;
   min-width: 350px;
   margin-top: 40px;
 }
@@ -430,13 +430,13 @@
 .price_description{
   margin: 40px 40px 0 40px;
   padding-bottom: 20px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #FFF;
   text-align: center;
 }
 
 
 .price_description a{
-  color: white;
+  color: #FFF;
   font-size: 25px;
   text-align: center;
   text-decoration: none;
@@ -456,7 +456,7 @@
 }
 
 .price p{
-  color: white;
+  color: #FFF;
   font-size: 20px;
 }
 
@@ -477,7 +477,7 @@
   color: #2abd91;
   background-color: #282860;
   transition-duration: .4s;
-  border: 1px solid white;
+  border: 1px solid #FFF;
 }
 
 .about_price_button:not(:hover){
@@ -504,7 +504,7 @@
   color: #2abd91;
   background-color: #282860;
   transition-duration: .4s;
-  border: 1px solid white;
+  border: 1px solid #FFF;
 }
 
 .more_pricelist_wrap a:not(:hover){
@@ -519,6 +519,9 @@
   .price_block{
     margin-top: 40px;
     width: 100%;
+  }
+  .price{
+    margin-bottom: 250px;
   }
 }
 
@@ -566,7 +569,7 @@
   color: #2abd91;
   background-color: #282860;
   transition-duration: .4s;
-  border: 1px solid white;
+  border: 1px solid ;
 }
 
 .photo_more:not(:hover){
@@ -619,7 +622,7 @@
   width: 100%;
   height: 5vh;
   background-color: #282860;
-  border: 1px solid white;
+  border: 1px solid #FFF;
   padding: 10px;
   font-size: 15px;
 }
@@ -630,7 +633,7 @@
   width: 100%;
   height: 7vh;
   background-color: #282860;
-  border: 1px solid white;
+  border: 1px solid #FFF;
   padding: 10px;
   font-size: 15px;
 }
@@ -650,7 +653,7 @@
   color: #2abd91;
   background-color: #282860;
   transition-duration: .4s;
-  border: 1px solid white;
+  border: 1px solid #FFF;
 }
 
 .svaz form button:not(:hover){
@@ -701,7 +704,7 @@ iframe {
 .post{
   width: 40%;
   height: 100%;
-  border: 1px solid white;
+  border: 1px solid #FFF;
   position: relative;
   background: url(img/posts_dog.jpg);
   background-position: center;
@@ -710,7 +713,7 @@ iframe {
 }
 
 .post p{
-  color: white;
+  color: #FFF;
   position: absolute;
   bottom: 25%;
   left: 10%;
@@ -721,7 +724,7 @@ iframe {
   position: absolute;
   bottom: 25%;
   width: 100%;
-  border-top: 1px solid white;
+  border-top: 1px solid #FFF;
 }
 
 @media (max-width: 1080px) {
@@ -756,7 +759,7 @@ iframe {
 .footer_social{
   line-height: 30px;
   padding-bottom: 10px;
-  color: white;
+  color: #FFF;
   text-align: center;
 }
 
@@ -766,7 +769,7 @@ iframe {
 
 .footer_social a{
   padding: 0 10px;
-  color: white;
+  color: #FFF;
   text-decoration: none;
 }
 
