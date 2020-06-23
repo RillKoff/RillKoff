@@ -135,10 +135,12 @@
     position: fixed;
     z-index: 99
   }
+
   .header_nav{display: none;}
 
   .background-top{
     height: 80vh;
+    background-attachment: scroll;
   }
 
   .scroll_down{
