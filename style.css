@@ -309,6 +309,7 @@
   .background-top{
     height: 80vh;
     background-attachment: scroll;
+    background-size: cover;
   }
   .scroll_down{
     left: 43%;
