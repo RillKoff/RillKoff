@@ -129,24 +129,7 @@
 }
 
 
-@media (max-width: 1080px) {
-  .header_position{
-    background-color: rgba(42, 189, 145, 1);
-    position: fixed;
-    z-index: 99
-  }
 
-  .header_nav{display: none;}
-
-  .background-top{
-    height: 80vh;
-    background-attachment: scroll;
-  }
-
-  .scroll_down{
-    bottom: 11vh;
-  }
-}
 
 
 .burger_input {
@@ -314,6 +297,35 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .header_position{
+    background-color: rgba(42, 189, 145, 1);
+    position: fixed;
+    z-index: 99
+  }
+  .header_nav{
+    display: none;
+  }
+  .background-top{
+    height: 80vh;
+    background-attachment: scroll;
+  }
+  .scroll_down{
+    left: 43%;
+    bottom: 11vh;
+    font-size: 30px;
+  }
+  .open{
+    top: 25px;
+    right: 25px;
+    width: 34px;
+    height: 5px;
+  }
+  .open::after, .open::before{
+    width: 34px;
+    height: 5px;
+  }
+}
 
 /*                 Блок с информацией                 */
 
