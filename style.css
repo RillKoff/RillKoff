@@ -33,7 +33,7 @@
 
 
 .header{
-  height: 15vh;
+  height: 25vh;
 }
 
 .header_position{
@@ -50,7 +50,7 @@
 
 .header_logo_text{
   padding-left: 15px;
-  color: #2abd91;
+  color: #FFF;
   font-size: 30px;
   margin: 20px 0;
 }
@@ -68,14 +68,14 @@
 }
 
 .header_nav_list a{
-  color: #2abd91;
+  color: #FFF;
   text-decoration: none;
 }
 
 .header_nav_list a:hover{
   transition-duration: .4s;
   border-bottom: solid 1px;
-  color: #2abd91;
+  color: #FFF;
 }
 
 .header_nav_list a:not(:hover){
@@ -98,7 +98,7 @@
   line-height: 1.25em;
   margin-top: 20vh;
   text-align: center;
-  color: #2abd91;
+  color: #FFF;
   text-shadow: 2.5px 2.5px 1px #000;
   font-size: 72px;
 }
@@ -107,9 +107,19 @@
   line-height: 1.67em;
   text-align:  center;
   margin: 0 auto;
-  color: #2abd91;
+  color: #FFF;
   text-shadow: 1.5px 1.5px 0.5px #000;
   font-size: 20px;
+}
+
+@media (max-width: 1080px) {
+  .title{
+    margin-top: 15vh;
+    font-size: 100px;
+  }
+  .slogan{
+    font-size: 50px;
+  }
 }
 
 .scroll_down{
@@ -301,8 +311,21 @@
   .header_position{
     background-color: rgba(42, 189, 145, 1);
     position: fixed;
-    z-index: 99
+    z-index: 99;
+    height: 15vh;
   }
+
+  .header_logo{
+    position: absolute;
+    top: 3vh;
+    }
+
+    #menuArea{
+      position: absolute;
+      right: 40px;
+      top: 3vh;
+    }
+
   .header_nav{
     display: none;
   }
@@ -812,6 +835,9 @@ iframe {
             font-size: 25px;
           }
     .post p{font-size: 30px;}
+    .footer_social a:hover{
+      border-bottom: 0px;
+    }
 }
 
 /*-----------------------Стилизация Блога-------------------------------*/
