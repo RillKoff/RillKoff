@@ -769,7 +769,34 @@ iframe {
 }
 
 
-
+@media (max-width: 1080px) {
+  .price_description p a{font-size: 40px;}
+  .price p{font-size: 40px;}
+  .about_price_button{
+    font-size: 40px;
+    width: 250px;
+    height: 50px;
+  }
+  .more_pricelist_wrap a{
+    font-size: 40px;
+  }
+  .photo_more{font-size: 40px;}
+  .svaz form h1{font-size: 60px;}
+  .svaz form button{font-size: 40px;}
+  ::-webkit-input-placeholder {
+            font-size: 25px;
+          }
+  ::-moz-placeholder { /* Firefox 19+ */
+            font-size: 25px;
+          }
+  :-ms-input-placeholder {
+            font-size: 25px;
+          }
+   :-moz-placeholder { /* Firefox 18- */
+            font-size: 25px;
+          }
+    .post p{font-size: 30px;}
+}
 
 /*-----------------------Стилизация Блога-------------------------------*/
 
