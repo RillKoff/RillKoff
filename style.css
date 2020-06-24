@@ -312,19 +312,8 @@
     background-color: rgba(42, 189, 145, 1);
     position: fixed;
     z-index: 99;
-    height: 15vh;
   }
 
-  .header_logo{
-    position: absolute;
-    top: 3vh;
-    }
-
-    #menuArea{
-      position: absolute;
-      right: 40px;
-      top: 3vh;
-    }
 
   .header_nav{
     display: none;

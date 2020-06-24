@@ -117,24 +117,24 @@
     <!-- Блок обратной связи -->
   <div class="svaz">
     <div class="svaz_position">
-      <form>
+      <form action="php/send.php" method="post">
         <h1>Свяжитесь с нами</h1>
         <div>
-          <input placeholder="Имя" class="form_svaz">
+          <input type="text" name="fio"  placeholder="Имя" class="form_svaz" required>
           <label></label>
         </div>
         <div>
-          <input placeholder="Электронная почта" class="form_svaz">
+          <input type="text" name="email" placeholder="Электронная почта" class="form_svaz" required>
           <label></label>
         </div>
         <div>
-          <input placeholder="Тема" class="form_svaz">
+          <input type="text" name="topic" placeholder="Тема" class="form_svaz" required>
           <label></label>
         </div>
         <div>
-          <textarea placeholder="Ваш комментарий"></textarea>
+          <textarea placeholder="Ваш комментарий" name="message_text" required></textarea>
         </div>
-        <button type="button" name="button">Отправить</button>
+        <button type="submit" name="button">Отправить</button>
    </form>
  </div>
 </div>
