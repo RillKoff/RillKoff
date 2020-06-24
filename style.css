@@ -22,6 +22,9 @@
 
 }
 
+iframe{
+  border: 0;
+}
 
 .background-top{
   height: 100vh;
@@ -47,6 +50,10 @@
   display: flex;
 }
 
+.header_logo img{
+  height: 70px;
+  width: 70px; 
+}
 
 .header_logo_text{
   padding-left: 15px;
