@@ -7,13 +7,36 @@
     <title>Блог</title>
   </head>
   <body>
-    <div class="blog_header">
-      <div class="header_position">
+
+    <div class="header">
+      <div class="header_position header_colorful">
         <div class="header_logo"> <img src="img/logo_mini.png" alt="" height="70px" width="70px"> <p class="header_logo_text"> МастерВет </p> </div>
+<!-- ____________________ Бургер меню______________-->
+        <div id="menuArea">
+          <input type="checkbox" id="menuToggle" class="burger_input"></input>
+
+        <label for="menuToggle" class="menuOpen">
+          <div class="open"></div>
+        </label>
+
+        <div class="menu menuEffects">
+          <label for="menuToggle"></label>
+          <div class="menuContent">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="pricelist.html">Услуги</a></li>
+              <li><a href=""> <i class="fab fa-instagram-square social_icon social_icon_menue"></i> </a></li>
+              <li><a href="https://vk.com/public196092591"> <i class="fab fa-vk social_icon social_icon_menue"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+<!-- ____________________ Бургер меню______________-->
         <div class="header_nav">
           <ul class="header_nav_list">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="blog.html">Статьи</a></li>
+            <li><a href="blog.html">Блог</a></li>
             <li><a href="pricelist.html">Услуги</a></li>
             <li><a href="">vkmastervet@yandex.ru</a></li>
             <li><a href="">+7(969)0081118</a></li>
