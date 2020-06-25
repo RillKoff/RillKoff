@@ -40,14 +40,14 @@
               <li><a href="blog.html">Блог</a></li>
               <li><a href="pricelist.html">Услуги</a></li>
               <li><a href="">vkmastervet@yandex.ru</a></li>
-              <li><a href="">+7(969)0081118</a></li>
+              <li><a href="tel:+79296161746">+7(969)0081118</a></li>
               <li><a href=""> <i class="fab fa-instagram-square social_icon"></i> </a></li>
               <li><a href="https://vk.com/public196092591"> <i class="fab fa-vk social_icon"></i> </a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="title"> <p>Клиника <br> «МастерВет»</p> </div>
+      <div class="title"> <h1>Клиника <br> «МастерВет»</h1> </div>
       <div class="slogan"> <p> С заботой о ваших питомцах </p> </div>
 
     </div>
@@ -57,7 +57,7 @@
         <div class="info_padding">
           <div class="info_position">
             <div class="info">
-              <p>Бомбическое качество обслуживания</p>
+              <p>Наши двери всегда открыты.<br> Мы работаем <br> c 08:00 до 21:00 без перерывов и выходных</p>
             </div>
             <div class="info_picture">
             </div>
@@ -98,52 +98,49 @@
       </div>
     </div>
 
-<!-- Блок с фотографиями -->
 
-    <div class="photo_container">
-      <div class="photo_position">
-        <div class="photo">  </div>
-        <div class="photo">  </div>
-        <div class="photo">  </div>
-        <div class="photo">  </div>
-        <div class="photo">  </div>
-        <div class="photo">  </div>
-      </div>
-    <p class="photo_more_container"><a class="photo_more" href="#">Больше фотографий</a></p>
-    </div>
-
-
-    <!-- Блок обратной связи -->
-  <div class="svaz">
-    <div class="svaz_position">
-      <form action="php/send.php" method="post">
-        <h1>Свяжитесь с нами</h1>
-        <div>
-          <input type="text" name="fio"  placeholder="Имя" class="form_svaz" required>
-          <label></label>
-        </div>
-        <div>
-          <input type="text" name="email" placeholder="Электронная почта" class="form_svaz" required>
-          <label></label>
-        </div>
-        <div>
-          <input type="text" name="topic" placeholder="Тема" class="form_svaz" required>
-          <label></label>
-        </div>
-        <div>
-          <textarea placeholder="Ваш комментарий" name="message_text" required></textarea>
-        </div>
-        <button type="submit" name="button">Отправить</button>
-   </form>
- </div>
+    <!-- Слайдер -->
+  <div class="slid_container">
+    <div class="container">
+  	<input type="radio" id="i1" name="images" checked/>
+  	<input type="radio" id="i2" name="images" />
+  	<input type="radio" id="i3" name="images" />
+  	<input type="radio" id="i4" name="images"  />
+  	<div class="slide_img" id="one">
+  			<img src="img/vet1.jpg">
+  				<label class="prev" for="i4"><span></span></label>
+  				<label class="next" for="i2"><span></span></label>
+  	</div>
+  	<div class="slide_img" id="two">
+  			<img src="img/vet2.jpg" >
+  				<label class="prev" for="i1"><span></span></label>
+  				<label class="next" for="i3"><span></span></label>
+  	</div>
+  	<div class="slide_img" id="three">
+  			<img src="img/vet3.jpg">
+  				<label class="prev" for="i2"><span></span></label>
+  				<label class="next" for="i4"><span></span></label>
+  	</div>
+  	<div class="slide_img" id="four">
+  			<img src="img/vet4.jpg">
+  				<label class="prev" for="i3"><span></span></label>
+  				<label class="next" for="i1"><span></span></label>
+  	</div>
+  	<div id="nav_slide">
+  		<label for="i1" class="dots" id="dot1"></label>
+  		<label for="i2" class="dots" id="dot2"></label>
+  		<label for="i3" class="dots" id="dot3"></label>
+  		<label for="i4" class="dots" id="dot4"></label>
+  	</div>
+  </div>
 </div>
 
 <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.253560710219!2d38.1418557086479!3d56.12199664632301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b4d6aa3dbf63a9%3A0x446b33b0f6801d46!2z0J_RgNC-0YHQv9C10LrRgiDQmNGB0L_Ri9GC0LDRgtC10LvQtdC5LCAxMywg0JrRgNCw0YHQvdC-0LDRgNC80LXQudGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MTI5Mg!5e0!3m2!1sru!2sru!4v1592244173116!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 <div class="posts_container">
   <div class="posts_position">
-    <div class="post"><p>Подготовка к открытию</p><div class="line_posts"></div></div>
-    <div class="post"><p>5 способов успокоить собаку</p><div class="line_posts"></div></div>
+    <div class="post"><p><a href="#">Подготовка к открытию</a></p><div class="line_posts"></div></div>
+    <div class="post"><p><a href="#">5 способов успокоить собаку</a></p><div class="line_posts"></div></div>
   </div>
 </div>
 <div class="footer">

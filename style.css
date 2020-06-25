@@ -101,12 +101,12 @@ iframe{
 }
 
 .title{
-  line-height: 1.25em;
-  margin-top: 20vh;
+  line-height: 2.5em;
+  margin-top: 30vh;
   text-align: center;
   color: #FFF;
   text-shadow: 2.5px 2.5px 1px #000;
-  font-size: 72px;
+  font-size: 40px;
 }
 
 .slogan{
@@ -115,7 +115,7 @@ iframe{
   margin: 0 auto;
   color: #FFF;
   text-shadow: 1.5px 1.5px 0.5px #000;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media (max-width: 1080px) {
@@ -506,149 +506,149 @@ iframe{
   }
 }
 
-/* Блок с фотографиями */
- .photo_container{
-   width: 100%;
-   background-color: #282860;
- }
 
- .photo_position{
-   padding-top: 10vh;
-   width: 60%;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
-
-.photo{
-  align-self: center;
-  width: 33%;
-  height: auto;
-  margin-bottom: 1%;
-  background-image: url(img/photo_about_us.jpg);
-  background-size: cover;
-  background-position: center;
-  min-width: 300px;
-  min-height: 300px;
-}
-
-
-.photo_more{
-  font-size: 20px;
-  padding: 20px;
-  height: 25px;
-  width: 100px;
-  background-color: #2abd91;
-  border: 1px solid #2abd91;
-  text-decoration: none;
-  color: #282860;
-  text-align: center;
-}
-
-.photo_more:hover{
-  color: #2abd91;
-  background-color: #282860;
-  transition-duration: .4s;
-  border: 1px solid ;
-}
-
-.photo_more:not(:hover){
-  transition-duration: .6s;
-}
-
-.photo_more_container{
-  padding-top: 5%;
-  text-align: center;
-}
-
-
-@media (max-width: 1080px) {
-  .photo_position{
-    flex-direction: column;
-    width: 100%;
-  }
-  .photo{
-    width: 90%;
-    height: 90vw;
-    margin-bottom: 40px;
-  }
-}
-
-/* Блок с формой */
-
-.svaz{
-  padding-top: 120px;
-  padding-bottom: 150px;
+/* Слайдер */
+.slid_container{
   width: 100%;
-  height: 50vh;
   background-color: #282860;
+  padding: 70px 0;
 }
 
-.svaz_position{
+.container {
   margin: 0 auto;
+  position: relative;
   width: 60%;
+  padding-bottom: 40%;
+  user-select: none;
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
+}
+.container input {
+  display: none;
+}
+.container .slide_img {
+  position: absolute;
+  width: 100%;
   height: 100%;
+  z-index: -1;
 }
-
-.svaz form h1{
-  color: #2abd91;
+.container .slide_img img {
+  width: inherit;
+  height: inherit;
+}
+.container .slide_img .prev, .container .slide_img .next {
+  width: 12%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  background-color: rgba(40, 40, 96, 0.2);
+  z-index: 99;
+  transition: .45s;
+  cursor: pointer;
   text-align: center;
-  margin-bottom: 10px;
 }
-
-.svaz form input{
-  color: #2abd91;
-  margin-bottom: 20px;
+.container .slide_img .next {
+  right: 0;
+}
+.container .slide_img .prev {
+  left: 0;
+}
+.container .slide_img .prev:hover, .container .slide_img .next:hover {
+  transition: .3s;
+  background-color: rgba(40, 40, 96, 0.8);
+}
+.container .slide_img .prev span, .container .slide_img .next span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .slide_img .prev span {
+  border-color: transparent #fff transparent transparent;
+  right: 35%;
+}
+.container .slide_img .next span {
+  border-color: transparent transparent transparent #fff;
+  left: 35%;
+}
+.container #nav_slide {
   width: 100%;
-  height: 5vh;
-  background-color: #282860;
-  border: 1px solid #FFF;
-  padding: 10px;
-  font-size: 15px;
+  bottom: 5%;
+  height: 11px;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  cursor: default;
 }
-
-.svaz form textarea{
-  color: #2abd91;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 7vh;
-  background-color: #282860;
-  border: 1px solid #FFF;
-  padding: 10px;
-  font-size: 15px;
-}
-
-.svaz form button{
-  appearance: none;
-  border: 0;
-  border-radius: 5px;
-  background: #2abd91;
-  color: #282860;
-  padding: 8px 16px;
-  font-size: 16px;
+.container #nav_slide .dots {
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  margin: 0 3px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .4s;
   cursor: pointer;
 }
-
-.svaz form button:hover {
-  color: #2abd91;
-  background-color: #282860;
-  transition-duration: .4s;
-  border: 1px solid #FFF;
+.container #nav_slide #dot1:hover, .container #nav_slide #dot2:hover, .container #nav_slide #dot3:hover, .container #nav_slide #dot4:hover {
+  background: #282860;
 }
 
-.svaz form button:not(:hover){
-  transition-duration: .6s;
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+  z-index: 9;
+  animation: scroll 2s ease-in-out;
 }
 
-.svaz form button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #cbd6ee;
+#i1:checked ~ #nav_slide #dot1, #i2:checked ~ #nav_slide #dot2, #i3:checked ~ #nav_slide #dot3, #i4:checked ~ #nav_slide #dot4 {
+  background: #282860;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: .4;
+  }
+  50%{
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 685px) {
+  .container {
+    border: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+  }
+  .container .slide_img .prev, .container .slide_img .next {
+    width: 15%;
+  }
+  .container .slide_img .prev span, .container .slide_img .next span {
+    border: solid 12px;
+  }
+  .container .slide_img .prev span {
+    border-color: transparent #fff transparent transparent;
+  }
+  .container .slide_img .next span {
+    border-color: transparent transparent transparent #fff;
+  }
+  .container #nav_slide .dots {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 @media (max-width: 1080px) {
-  .svaz_position{
+  .container{
     width: 90%;
+    height: 150px;
   }
 }
 
@@ -679,7 +679,7 @@ iframe {
   flex-wrap: wrap;
   width: 60%;
   margin: 0 auto;
-  padding-top: 10vh;
+  padding: 80px 0;
 }
 
 .post{
@@ -693,12 +693,35 @@ iframe {
   min-height: 400px;
 }
 
+.post:hover{
+  transform: scale(1.1);
+  transition-duration: .4s;
+}
+
+.post:not(:hover){
+  transition-duration: .4s;
+}
+
 .post p{
-  color: #FFF;
   position: absolute;
   bottom: 25%;
   left: 10%;
+}
+
+.post p a{
+  color: #FFF;
   font-size: 20px;
+  text-decoration: none;
+}
+
+.post p a:hover{
+  color: #282860;
+  font-size: 25px;
+  transition-duration: .5s;
+}
+
+.post p a:not(:hover){
+  transition-duration: .5s;
 }
 
 .line_posts{
