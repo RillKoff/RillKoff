@@ -36,7 +36,7 @@ iframe{
 
 
 .header{
-  height: 25vh;
+  height: 5vh;
 }
 
 .header_position{
@@ -804,10 +804,14 @@ iframe {
   background-color: #282860;
 }
 
+.main_content_back{
+  background-color: #282860;
+}
+
 .main_content_wrap{
   width: 50%;
-  margin: 10vh auto;
-
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .blog_content_wrap{
@@ -859,7 +863,7 @@ iframe {
 }
 
 .blog_h a:hover{
-  color: #402890;
+  color: #FFF;
 }
 
 .blog_content_text p{
@@ -872,6 +876,9 @@ iframe {
 
 /*-----------------------Стилизация Прайслиста-------------------------------*/
 
+.main_content_pricelist_back{
+  background-color: #282860;
+}
 
 .main_content_pricelist_wrap{
   width: 70%;
@@ -879,7 +886,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  padding-top: 100px;
 }
 
 .service_price{
@@ -888,7 +895,7 @@ iframe {
   height: 350px;
   margin-bottom: 40px;
   position: relative;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 24px 35px rgba(0,0,0,0.25), 0 20px 18px rgba(0,0,0,0.22);
   background-color: #282860;
 }
 
@@ -914,6 +921,7 @@ iframe {
 }
 
 .service_price_description h2{
+  padding-top: 15px;
   text-align: center;
   color: #2abd91;
 }
