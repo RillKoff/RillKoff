@@ -52,7 +52,7 @@ iframe{
 
 .header_logo img{
   height: 70px;
-  width: 70px; 
+  width: 70px;
 }
 
 .header_logo_text{
@@ -332,7 +332,7 @@ iframe{
 
 .info_picture{
   width: 50%;
-  background: url(https://cdn.discordapp.com/attachments/223144218690846739/721145903490138181/polisi-rusia-sibuk-cari-kucing-yang-bawa-bom-k7bKsJdTuF.png);
+  background: url(img/info_picture.png);
   background-size: cover;
   background-position: center;
 }
