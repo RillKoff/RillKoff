@@ -19,8 +19,10 @@
 *{
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
+}
 
-
+body{
+  background-color: #282860;
 }
 
 iframe{
