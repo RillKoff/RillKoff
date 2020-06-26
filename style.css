@@ -28,7 +28,7 @@ iframe{
 
 .background-top{
   height: 100vh;
-  background: url(img/parallax.jpg);
+  background: url(img/parallax.webp);
   background-position: center;
   background-attachment: fixed;
 }
@@ -714,7 +714,7 @@ iframe {
   height: 100%;
   border: 1px solid #FFF;
   position: relative;
-  background: url(img/posts_dog.jpg);
+  background: url(img/posts_dog.webp);
   background-position: center;
   min-width: 400px;
   min-height: 400px;
@@ -975,7 +975,7 @@ iframe {
 .service_price_photo{
   width: 100%;
   height: 60%;
-  background: url("img/price_photo.jpg");
+  background: url("img/price_photo.webp");
   background-position: center;
   background-size: cover;
 }
